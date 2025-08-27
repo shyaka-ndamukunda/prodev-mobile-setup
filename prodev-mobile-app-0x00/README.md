@@ -1,29 +1,50 @@
-First Mobile App Setup
-This document outlines the steps taken to scaffold a new mobile application using the Expo Router template and the observed effects of the reset-project command.
+# Welcome to your Expo app 👋
 
-Scaffolding Process
-Navigate to the project directory:
-cd prodev-mobile-setup
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-Initialize the Expo project:
-npx create-expo-app@latest .
-This command initializes a new Expo project in the current directory using the latest Expo Router template. The file-based routing system creates a app/ directory which contains the application's navigation routes.
+## Get started
 
-Modify the Home Screen:
+1. Install dependencies
 
-I opened the app/(tabs)/index.tsx file.
+   ```bash
+   npm install
+   ```
 
-I located the default <Text> component with the value "Welcome!".
+2. Start the app
 
-I changed the text to "** First App Created**".
+   ```bash
+   npx expo start
+   ```
 
-The changes were automatically reflected on the web preview after saving the file.
+In the output, you'll find options to open the app in a
 
-Observations from npm run reset-project
-When I ran the npm run reset-project command, I observed the following:
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-The existing app/ directory was renamed to app-example/. This preserved the original project files and the modifications I had made.
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-A new app/ directory was created, containing a fresh copy of the default Expo Router template.
+## Get a fresh project
 
-This command effectively "resets" the project to its initial, un-edited state, making it easy to get a fresh start without having to manually delete files. The app-example/ folder serves as a backup of the previous work.
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
