@@ -1,50 +1,17 @@
-# Welcome to your Expo app 👋
+# My First Mobile App Setup
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This document outlines the steps I followed to set up my first mobile application using the Expo Router template. It also includes my observations from the `reset-project` command.
 
-## Get started
+## Scaffolding Process
 
-1. Install dependencies
+1.  **Project Initialization:** I used the `npx create-expo-app@latest prodev-mobile-app-0x00` command to initialize a new Expo project. This created a new directory, `prodev-mobile-app-0x00`, with all the necessary project files.
 
-   ```bash
-   npm install
-   ```
+2.  **Home Screen Modification:** I navigated into the project directory and opened the `app/(tabs)/index.tsx` file. I changed the default "Welcome!" text to "**First App Created**" as required by the task.
 
-2. Start the app
+## Observations from `npm run reset-project`
 
-   ```bash
-   npx expo start
-   ```
+When I ran the `npm run reset-project` command, I observed the following:
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* The script moved the original `app` folder (which contained my modified files) to a new directory named **`app-example`**. This action serves as a backup of the original project.
+* A new, clean `app` directory was automatically created with a fresh set of default files.
+* I encountered an `EPERM` error, which required me to perform the file move manually. This taught me that file permissions or a running process can interfere with script execution.
